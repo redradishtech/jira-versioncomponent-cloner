@@ -146,7 +146,7 @@ class JiraVersionComponentCloner:
                     # be done on its own
                     destfield.update(archived=True)
             destfield.update(fields=newfields)
-            print(f"Created from {srcfield.self} -> {destfield.self}")
+            print(f"Copied {destproj.key} {fieldname} {destfield} ({srcfield.self} -> {destfield.self})")
 
 
 if __name__ == "__main__":
